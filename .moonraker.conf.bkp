@@ -1,5 +1,5 @@
 [server]
-host = 0.0.0.0
+host = 127.0.0.1
 port = 7125
 klippy_uds_address = {data_path}/comms/klippy.sock
 max_upload_size = 1024
@@ -55,4 +55,14 @@ requirements = requirements.txt
 system_dependencies = system-dependencies.json
 primary_branch = main
 managed_services = klipper
+
+[moongate]
+
+[update_manager moongate]
+type = git_repo
+path = /home/pi/moongate
+origin = https://github.com/PEEKYPAUL/moongate.git
+primary_branch = master
+managed_services = moonraker
+install_script = klipper-plugin/update.sh
 
