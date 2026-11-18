@@ -66,3 +66,10 @@ primary_branch = master
 managed_services = moonraker
 install_script = klipper-plugin/update.sh
 
+[update_manager aldis]
+type = executable
+channel = stable
+repo = mjonuschat/aldis
+path = ~/aldis
+managed_services = aldis
+
